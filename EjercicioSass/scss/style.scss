@@ -1,0 +1,66 @@
+$primary-color: #b39a8f;
+$secondary-color: #e6d4c3;
+$text-color: #4a3b34;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $secondary-color;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background: $primary-color;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background: darken($primary-color, 10%);
+    padding: 10px;
+    text-align: center;
+    
+    a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+}
+
+.content {
+    padding: 20px;
+    
+    article {
+        margin-bottom: 20px;
+        background: lighten($secondary-color, 5%);
+        padding: 15px;
+    }
+    
+    .sass-info {
+        h2 {
+            color: darken($primary-color, 15%);
+        }
+    }
+    
+    .sass-syntax {
+        h2 {
+            color: darken($primary-color, 20%);
+        }
+    }
+}
+
+footer {
+    background: $primary-color;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

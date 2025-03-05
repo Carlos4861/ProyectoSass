@@ -1,0 +1,28 @@
+// Estilos de tipografía
+body {
+  font-family: $font-primary;
+  color: $font-color;
+  background-color: $background-color;
+  padding: 10px 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-secondary;
+  font-size: 1rem;
+}
+
+// Estilos de botones
+.button {
+  @include flex-center;
+  background-color: $primary-color;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: darken-color($primary-color, 10%);
+  }
+}

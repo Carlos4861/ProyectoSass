@@ -1,0 +1,22 @@
+// Estilos del header
+.header {
+  background-color: $header-background;
+  color: #fff;
+  padding: 20px;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
